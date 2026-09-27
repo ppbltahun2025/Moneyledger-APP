@@ -1,4 +1,4 @@
-// Isi nilai ini setelah kamu deploy Apps Script (lihat README.md bagian Setup).
 window.APP_CONFIG = {
-  APPS_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbwHVwjdKu0LXVJawtT8r12hlNyJKcmVwMQtF-RWiihEx0GYFDgfg1bo1swEmlalWRTp/exec'
+  APPS_SCRIPT_URL:
+    'https://script.google.com/macros/s/AKfycbwHVwjdKu0LXVJawtT8r12hlNyJKcmVwMQtF-RWiihEx0GYFDgfg1bo1swEmlalWRTp/exec'
 };
