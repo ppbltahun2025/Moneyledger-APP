@@ -1,13 +1,149 @@
 {
-  "updatedAt": "2026-09-27T00:00:00.000Z",
+  "updatedAt": "2026-09-27T12:36:34.664Z",
   "articles": [
     {
-      "title": "Selamat datang di MoneyLedger",
-      "source": "MoneyLedger",
-      "category": "Info",
-      "link": "#",
-      "publishedAt": "2026-09-27T00:00:00.000Z",
-      "summary": "Halaman ini akan otomatis terisi berita ekonomi, saham, dan kripto terbaru setelah GitHub Action 'Fetch News' berjalan pertama kali (lihat README untuk cara mengaktifkannya)."
+      "title": "OpenAI pauses training a second time as rogue agents hit U.S. government websites",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/openai-pauses-training-a-second-time-as-rogue-agents-hit-us-government-websites-4918960",
+      "publishedAt": "2026-09-27T11:30:58.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Republicans pour money into dozens of US House races previously considered ’safe’",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/republicans-pour-money-into-dozens-of-us-house-races-previously-considered-safe-4918910",
+      "publishedAt": "2026-09-27T11:00:48.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Street Calls of the Week",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/street-calls-of-the-week-93CH-4918617",
+      "publishedAt": "2026-09-27T10:00:02.000Z",
+      "summary": ""
+    },
+    {
+      "title": "5 big analyst AI moves: Muse AI seen as major catalyst for Meta; MSFT upgraded",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/5-big-analyst-ai-moves-muse-ai-seen-as-major-catalyst-for-meta-msft-upgraded-4918281",
+      "publishedAt": "2026-09-27T09:00:00.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin steadies above $84,000 as historic Q3 rally nears its end",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-steadies-above-84000-as-historic-q3-rally-nears-its-end-4918823",
+      "publishedAt": "2026-09-27T05:48:39.000Z",
+      "summary": ""
+    },
+    {
+      "title": "OpenAI, Anthropic CEOs called to appear at Australian AI probe",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/openai-anthropic-ceos-called-to-appear-at-australian-ai-probe-4918799",
+      "publishedAt": "2026-09-27T04:30:30.000Z",
+      "summary": ""
+    },
+    {
+      "title": "China consumer stocks near decade lows as investors pile into AI",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/china-consumer-stocks-near-decade-lows-as-investors-pile-into-ai-4918679",
+      "publishedAt": "2026-09-27T00:33:42.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin consolidates below ATH in tight range: Live levels",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-tests-double-top-at-82179-with-mfi-maxed-live-levels-93CH-4908352",
+      "publishedAt": "2026-09-26T19:02:45.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin holds near $84,000 as rising bond yields offset regulatory progress",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-holds-near-84000-as-rising-bond-yields-offset-regulatory-progress-4918445",
+      "publishedAt": "2026-09-26T12:27:32.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin slips, but set for weekly gain as regulatory cheer offsets surging yields",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-pauses-near-84k-with-focus-on-rate-jitters-bitget-hack-4916727",
+      "publishedAt": "2026-09-25T20:52:20.000Z",
+      "summary": ""
+    },
+    {
+      "title": "ChangeNOW Unveils TOKEN2049 Singapore Lineup, Bit Digital Stage Address, and Fast Track Wallet Program",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/changenow-unveils-token2049-singapore-lineup-bit-digital-stage-address-and-fast-track-wallet-program-4917735",
+      "publishedAt": "2026-09-25T14:30:39.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin cuts losses, remains muted amid rising oil and yields, hawkish Fed signals",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-to-84k-as-yields-oil-spike-spook-risk-4914488",
+      "publishedAt": "2026-09-24T22:01:14.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/nikkei-may-rise-as-weak-yen-raises-earnings-hopes-776a8056?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T19:26:00.000Z",
+      "summary": "U.S. stocks were mostly lower, with the Nasdaq leading declines as makers of AI infrastructure suffered steep falls, many in the double digits. Nvidia was down 16%."
+    },
+    {
+      "title": "Comex Gold, Silver Settle Lower",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/gold-edges-lower-feds-rate-decision-in-focus-09dbfceb?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T19:01:00.000Z",
+      "summary": "Gold settled 1.4% lower, down two of the past three sessions, and silver fell 2.5%, down three of the past four sessions."
+    },
+    {
+      "title": "DeepSeek Won't Sink U.S. AI Titans",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/deepseek-us-ai-stocks-nvidia-broadcom-6cdfae81?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T18:12:00.000Z",
+      "summary": "Panic fueling the selloff of Nvidia, Broadcom and other tech giants is overblown."
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/financial-services-roundup-market-talk-94f52cba?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T17:27:00.000Z",
+      "summary": "Gain insight on Experian, SoFi Technologies and more in the latest Market Talks covering Financial Services."
+    },
+    {
+      "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/arabica-coffee-prices-hit-new-high-on-u-s-colombia-tariff-spat-582446fe?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T17:20:00.000Z",
+      "summary": "Arabica coffee prices hit a record level, as traders digested the withdrawal of President Trump’s threats to impose tariffs and economic sanctions on Colombia."
+    },
+    {
+      "title": "Swiss franc, Japanese yen Rise as DeepSeek News Boosts Safe Havens",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/safe-haven-currencies-strengthen-amid-fears-over-global-tariffs-9964e17a?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T14:55:00.000Z",
+      "summary": "The Yen and Swiss Franc were stronger against the dollar as investors sought safe havens after Chinese start-up DeepSeek’s new AI model hit U.S. tech stocks."
     }
   ]
 }
