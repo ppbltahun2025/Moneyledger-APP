@@ -17,14 +17,10 @@ function renderSidebar(active) {
       <div class="brand">Money<em>Ledger</em></div>
       <nav>${nav}</nav>
       <div class="user-box">
-        <div id="user-name">${Session.name || ''}</div>
-        <div class="logout" onclick="doLogout()">Keluar</div>
+        <div id="user-name">${Store.displayName()}</div>
+        ${Store.getMode() === 'guest' ? '<div style="margin-top:6px;"><a class="logout" href="register.html" style="text-decoration:none;">Buat akun (simpan permanen) →</a></div>' : ''}
+        <div class="logout" onclick="Store.logout()" style="margin-top:6px;">Keluar</div>
       </div>
     </div>
   `;
-}
-
-function doLogout() {
-  Session.clear();
-  window.location.href = 'index.html';
 }

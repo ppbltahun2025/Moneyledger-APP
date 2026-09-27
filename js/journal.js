@@ -1,4 +1,4 @@
-requireLogin();
+requireSession();
 renderSidebar('journal.html');
 
 document.getElementById('journal-date').valueAsDate = new Date();
@@ -8,7 +8,7 @@ document.getElementById('journal-form').addEventListener('submit', async (e) => 
   const date = document.getElementById('journal-date').value;
   const entry = document.getElementById('journal-entry').value;
   try {
-    await apiCall('addJournal', { date, entry });
+    await Store.addJournal(date, entry);
     e.target.reset();
     document.getElementById('journal-date').valueAsDate = new Date();
     loadJournal();
@@ -16,7 +16,7 @@ document.getElementById('journal-form').addEventListener('submit', async (e) => 
 });
 
 async function loadJournal() {
-  const { journal } = await apiCall('getData');
+  const { journal } = await Store.getData();
   const rows = journal.slice().reverse();
   document.getElementById('journal-list').innerHTML = rows.map(j => `
     <div class="card" style="margin-bottom:10px;">

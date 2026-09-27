@@ -1,27 +1,18 @@
-requireLogin();
+requireSession();
 renderSidebar('dashboard.html');
 
-function rupiah(n) {
-  return 'Rp' + Math.round(n).toLocaleString('id-ID');
-}
+function rupiah(n) { return 'Rp' + Math.round(n || 0).toLocaleString('id-ID'); }
 
 function todayKeys() {
   const now = new Date();
   const day = String(now.getDate()).padStart(2, '0');
   const month = String(now.getMonth() + 1).padStart(2, '0');
-  const dayKey = `${now.getFullYear()}-${month}-${day}`;
-  const monthKey = `${now.getFullYear()}-${month}`;
-  const yearKey = `${now.getFullYear()}`;
-
-  // ISO week key, dihitung sama seperti di backend (Code.gs) biar konsisten
-  const d = new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
-  const dnum = (d.getUTCDay() + 6) % 7;
-  d.setUTCDate(d.getUTCDate() - dnum + 3);
-  const firstThursday = new Date(Date.UTC(d.getUTCFullYear(), 0, 4));
-  const week = 1 + Math.round(((d - firstThursday) / 86400000 - 3 + ((firstThursday.getUTCDay() + 6) % 7)) / 7);
-  const weekKey = d.getUTCFullYear() + '-W' + String(week).padStart(2, '0');
-
-  return { dayKey, weekKey, monthKey, yearKey };
+  return {
+    dayKey: `${now.getFullYear()}-${month}-${day}`,
+    weekKey: isoWeekKeyJS(now),
+    monthKey: `${now.getFullYear()}-${month}`,
+    yearKey: `${now.getFullYear()}`
+  };
 }
 
 async function load() {
@@ -32,13 +23,9 @@ async function load() {
   const keys = todayKeys();
 
   try {
-    const [{ report }, { transactions }] = await Promise.all([
-      apiCall('getReport'),
-      apiCall('getData')
-    ]);
-
+    const [{ report }, { transactions }] = await Promise.all([Store.getReport(), Store.getData()]);
     const b = report.buckets;
-    const set = (id, val) => document.getElementById(id).textContent = rupiah(val || 0);
+    const set = (id, val) => document.getElementById(id).textContent = rupiah(val);
 
     set('stat-daily-income', b.daily[keys.dayKey]?.income);
     set('stat-daily-expense', b.daily[keys.dayKey]?.expense);
@@ -53,19 +40,17 @@ async function load() {
     const yearlyTarget = report.yearlyTarget[keys.yearKey];
 
     if (monthlyTarget) {
-      const pct = Math.min(100, (monthlyIncome / monthlyTarget) * 100);
       document.getElementById('monthly-target-text').textContent = `${rupiah(monthlyIncome)} / ${rupiah(monthlyTarget)}`;
-      document.getElementById('monthly-progress').style.width = pct + '%';
+      document.getElementById('monthly-progress').style.width = Math.min(100, (monthlyIncome / monthlyTarget) * 100) + '%';
     }
     if (yearlyTarget) {
-      const pct = Math.min(100, (yearlyIncome / yearlyTarget) * 100);
       document.getElementById('yearly-target-text').textContent = `${rupiah(yearlyIncome)} / ${rupiah(yearlyTarget)}`;
-      document.getElementById('yearly-progress').style.width = pct + '%';
+      document.getElementById('yearly-progress').style.width = Math.min(100, (yearlyIncome / yearlyTarget) * 100) + '%';
     }
 
     const recent = transactions.slice(-8).reverse();
-    const ledger = document.getElementById('recent-ledger');
-    ledger.innerHTML = `<div class="ledger-row head"><div>Tanggal</div><div>Kategori / Catatan</div><div>Jenis</div><div>Jumlah</div></div>` +
+    document.getElementById('recent-ledger').innerHTML =
+      `<div class="ledger-row head"><div>Tanggal</div><div>Kategori / Catatan</div><div>Jenis</div><div>Jumlah</div></div>` +
       recent.map(t => `
         <div class="ledger-row">
           <div>${t.date}</div>

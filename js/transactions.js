@@ -1,4 +1,4 @@
-requireLogin();
+requireSession();
 renderSidebar('transactions.html');
 
 function rupiah(n) { return 'Rp' + Math.round(n).toLocaleString('id-ID'); }
@@ -15,7 +15,7 @@ document.getElementById('tx-form').addEventListener('submit', async (e) => {
     note: document.getElementById('tx-note').value
   };
   try {
-    await apiCall('addTransaction', { tx: JSON.stringify(tx) });
+    await Store.addTransaction(tx);
     e.target.reset();
     document.getElementById('tx-date').valueAsDate = new Date();
     loadLedger();
@@ -25,7 +25,7 @@ document.getElementById('tx-form').addEventListener('submit', async (e) => {
 });
 
 async function loadLedger() {
-  const { transactions } = await apiCall('getData');
+  const { transactions } = await Store.getData();
   const rows = transactions.slice().reverse();
   document.getElementById('full-ledger').innerHTML =
     `<div class="ledger-row head"><div>Tanggal</div><div>Kategori / Catatan</div><div>Jenis</div><div>Jumlah</div></div>` +
