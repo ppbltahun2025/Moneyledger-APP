@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — MoneyLedger</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <div id="sidebar-root"></div>
+  <div class="main">
+    <h1 class="page-title">Dashboard</h1>
+    <p class="page-sub" id="today-label"></p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="stat-label">Hari ini</div>
+        <div class="stat-value income" id="stat-daily-income">Rp0</div>
+        <div class="stat-value expense" id="stat-daily-expense" style="font-size:16px; margin-top:4px;">Rp0</div>
+      </div>
+      <div class="card">
+        <div class="stat-label">Minggu ini</div>
+        <div class="stat-value income" id="stat-weekly-income">Rp0</div>
+        <div class="stat-value expense" id="stat-weekly-expense" style="font-size:16px; margin-top:4px;">Rp0</div>
+      </div>
+      <div class="card">
+        <div class="stat-label">Bulan ini</div>
+        <div class="stat-value income" id="stat-monthly-income">Rp0</div>
+        <div class="stat-value expense" id="stat-monthly-expense" style="font-size:16px; margin-top:4px;">Rp0</div>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="stat-label">Target bulan ini</div>
+        <div class="stat-value" id="monthly-target-text">Belum diset</div>
+        <div class="progress-track"><div class="progress-fill" id="monthly-progress" style="width:0%"></div></div>
+      </div>
+      <div class="card">
+        <div class="stat-label">Target tahun ini</div>
+        <div class="stat-value" id="yearly-target-text">Belum diset</div>
+        <div class="progress-track"><div class="progress-fill" id="yearly-progress" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <div class="section-title">Transaksi terbaru</div>
+    <div class="ledger" id="recent-ledger"></div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

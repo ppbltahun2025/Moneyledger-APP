@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoneyLedger — Masuk</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <div class="login-screen">
+    <div class="login-card">
+      <p class="display">Money<em style="color:var(--gold)">Ledger</em></p>
+      <p>Catat pemasukan &amp; pengeluaran, pantau target, dan bangun literasi keuanganmu — semua dalam satu tempat.</p>
+      <div id="g_id_onload"
+           data-callback="handleCredentialResponse">
+      </div>
+      <div id="google-btn-container" style="display:flex; justify-content:center;"></div>
+      <p id="login-error" style="color:var(--rust); margin-top:16px; font-size:13px;"></p>
+      <p style="margin-top:24px; font-size:12px;">Data kamu tersimpan di Google Sheet milikmu sendiri, bukan di server pihak ketiga.</p>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script>
+    if (Session.isLoggedIn()) window.location.href = 'dashboard.html';
+
+    window.onload = function () {
+      google.accounts.id.initialize({
+        client_id: window.APP_CONFIG.GOOGLE_CLIENT_ID,
+        callback: handleCredentialResponse
+      });
+      google.accounts.id.renderButton(
+        document.getElementById('google-btn-container'),
+        { theme: 'outline', size: 'large', text: 'signin_with' }
+      );
+    };
+
+    async function handleCredentialResponse(response) {
+      const errEl = document.getElementById('login-error');
+      errEl.textContent = '';
+      try {
+        await loginWithGoogleToken(response.credential);
+        window.location.href = 'dashboard.html';
+      } catch (e) {
+        errEl.textContent = 'Gagal masuk: ' + e.message;
+      }
+    }
+  </script>
+</body>
+</html>

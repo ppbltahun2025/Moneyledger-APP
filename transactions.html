@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transaksi — MoneyLedger</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <div id="sidebar-root"></div>
+  <div class="main">
+    <h1 class="page-title">Transaksi</h1>
+    <p class="page-sub">Catat setiap pemasukan dan pengeluaran.</p>
+
+    <form class="stacked" id="tx-form">
+      <select id="tx-type" required>
+        <option value="income">Pemasukan</option>
+        <option value="expense">Pengeluaran</option>
+      </select>
+      <input type="date" id="tx-date" required>
+      <input type="text" id="tx-category" placeholder="Kategori (misal: Gaji, Makan, Transport)" required>
+      <input type="number" id="tx-amount" placeholder="Jumlah (Rp)" min="0" required>
+      <input type="text" id="tx-note" placeholder="Catatan (opsional)">
+      <button type="submit">Simpan transaksi</button>
+    </form>
+
+    <div class="section-title">Semua transaksi</div>
+    <div class="ledger" id="full-ledger"></div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/transactions.js"></script>
+</body>
+</html>

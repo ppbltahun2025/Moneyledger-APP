@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berita & Pasar — MoneyLedger</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <div id="sidebar-root"></div>
+  <div class="main">
+    <h1 class="page-title">Berita & Pasar</h1>
+    <p class="page-sub" id="updated-label">Update otomatis setiap hari lewat GitHub Actions.</p>
+    <div id="article-list"></div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script>
+requireLogin();
+renderSidebar('articles.html');
+
+fetch('data/articles.json?_=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    document.getElementById('updated-label').textContent =
+      'Terakhir diperbarui: ' + new Date(data.updatedAt).toLocaleString('id-ID');
+    document.getElementById('article-list').innerHTML = data.articles.map(a => `
+      <div class="article-card">
+        <div class="source">${a.source} · ${new Date(a.publishedAt).toLocaleDateString('id-ID')} · <span class="tag">${a.category}</span></div>
+        <h3><a href="${a.link}" target="_blank" rel="noopener">${a.title}</a></h3>
+        <p>${a.summary}</p>
+      </div>
+    `).join('');
+  })
+  .catch(() => {
+    document.getElementById('article-list').innerHTML =
+      '<p style="color:var(--ink-soft);">Belum ada data berita. Jalankan GitHub Action "Fetch News" dulu (lihat README).</p>';
+  });
+</script>
+</body>
+</html>

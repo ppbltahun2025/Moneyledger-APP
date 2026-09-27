@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Literasi Keuangan — MoneyLedger</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <div id="sidebar-root"></div>
+  <div class="main">
+    <h1 class="page-title">Literasi Keuangan</h1>
+    <p class="page-sub">Ringkasan konsep, ditulis ulang dengan bahasa sendiri — bukan salinan buku (menghormati hak cipta penulis). Untuk teks lengkap, gunakan tautan resmi di tiap bagian.</p>
+
+    <div class="article-card">
+      <h3>Aset vs. Liabilitas</h3>
+      <p>Konsep populer dari buku "Rich Dad Poor Dad" karya Robert Kiyosaki: aset adalah sesuatu yang memasukkan uang ke kantongmu (saham yang bagi dividen, properti sewaan, bisnis), sementara liabilitas mengeluarkan uang dari kantongmu (cicilan konsumtif, mobil pribadi yang terus butuh biaya perawatan). Banyak orang mengira rumah pribadi atau mobil adalah "aset", padahal keduanya baru jadi aset kalau menghasilkan pemasukan. Fokus jangka panjang: perbesar sisi aset, bukan sekadar memperbesar gaji.</p>
+    </div>
+
+    <div class="article-card">
+      <h3>Cash Flow Quadrant</h3>
+      <p>Kiyosaki membagi sumber pendapatan orang menjadi empat kuadran: Employee (karyawan, tukar waktu dengan gaji), Self-employed (kerja untuk diri sendiri, penghasilan berhenti kalau berhenti kerja), Business owner (punya sistem/orang yang bekerja untukmu), dan Investor (uang bekerja untukmu). Tidak ada kuadran yang "salah", tapi kebebasan finansial biasanya datang dari bergeser sebagian ke kuadran Business owner dan Investor seiring waktu.</p>
+    </div>
+
+    <div class="article-card">
+      <h3>Bunga Majemuk (Compounding)</h3>
+      <p>Ini prinsip di balik hampir semua investasi jangka panjang: keuntungan yang diinvestasikan kembali akan menghasilkan keuntungan baru, dan efeknya membesar secara eksponensial seiring waktu. Semakin dini mulai — walau dengan nominal kecil — semakin besar dampaknya dibanding mulai besar tapi telat. Ini alasan kenapa "mulai sekarang" biasanya lebih penting daripada "menunggu sampai dana besar".</p>
+    </div>
+
+    <div class="article-card">
+      <h3>Dana Darurat Dulu, Baru Investasi</h3>
+      <p>Sebelum agresif ke saham atau kripto, banyak perencana keuangan menyarankan punya dana darurat setara 3–6 bulan pengeluaran di tempat yang mudah dicairkan (bukan di saham/kripto yang harganya naik-turun). Ini mencegah kamu terpaksa jual investasi di harga rugi hanya karena butuh uang mendadak.</p>
+    </div>
+
+    <div class="article-card">
+      <h3>Dollar-Cost Averaging (DCA)</h3>
+      <p>Strategi investasi rutin dengan nominal tetap (misal tiap tanggal gajian) tanpa berusaha menebak waktu terbaik pasar. Karena membeli di berbagai level harga (kadang mahal, kadang murah), rata-rata harga beli jadi lebih stabil dan risiko "salah waktu masuk" berkurang — cocok untuk pemula di saham maupun kripto.</p>
+    </div>
+
+    <div class="section-title">Baca versi lengkap (sumber resmi)</div>
+    <div class="ledger">
+      <div class="ledger-row" style="grid-template-columns: 1fr 140px;">
+        <div>Rich Dad Poor Dad — Robert Kiyosaki</div>
+        <div><a href="https://play.google.com/store/search?q=rich%20dad%20poor%20dad&c=books" target="_blank" rel="noopener">Cari di Play Books →</a></div>
+      </div>
+      <div class="ledger-row" style="grid-template-columns: 1fr 140px;">
+        <div>The Psychology of Money — Morgan Housel</div>
+        <div><a href="https://play.google.com/store/search?q=the%20psychology%20of%20money&c=books" target="_blank" rel="noopener">Cari di Play Books →</a></div>
+      </div>
+      <div class="ledger-row" style="grid-template-columns: 1fr 140px;">
+        <div>Toko buku Gramedia (versi cetak)</div>
+        <div><a href="https://www.gramedia.com/search?q=literasi%20keuangan" target="_blank" rel="noopener">Cari di Gramedia →</a></div>
+      </div>
+      <div class="ledger-row" style="grid-template-columns: 1fr 140px;">
+        <div>Modul edukasi resmi OJK</div>
+        <div><a href="https://www.ojk.go.id/id/kanal/edukasi-dan-perlindungan-konsumen/Pages/default.aspx" target="_blank" rel="noopener">Buka OJK →</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/layout.js"></script>
+<script>
+requireLogin();
+renderSidebar('ebooks.html');
+</script>
+</body>
+</html>
