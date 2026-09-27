@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jurnal Harian — MoneyLedger</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+  <div id="sidebar-root"></div>
+  <div class="main">
+    <h1 class="page-title">Jurnal Harian</h1>
+    <p class="page-sub">Catatan pribadimu — pikiran, keputusan finansial, atau apapun tentang harimu. Hanya tersimpan di spreadsheet-mu sendiri.</p>
+
+    <form class="stacked" id="journal-form">
+      <input type="date" id="journal-date" required>
+      <textarea id="journal-entry" placeholder="Tulis apa saja tentang harimu..." required></textarea>
+      <button type="submit">Simpan catatan</button>
+    </form>
+
+    <div class="section-title">Catatan sebelumnya</div>
+    <div id="journal-list"></div>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/store.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/journal.js"></script>
+</body>
+</html>
