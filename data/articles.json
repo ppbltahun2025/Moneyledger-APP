@@ -1,44 +1,92 @@
 {
-  "updatedAt": "2026-09-27T23:05:03.301Z",
+  "updatedAt": "2026-09-28T23:04:56.956Z",
   "articles": [
     {
-      "title": "Iran-linked diesel price spike makes electric trucks cheaper than diesel in key EU markets, environmental group says",
+      "title": "OpenAI shelves new AI model after internal safety tests, WSJ reports",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/iranlinked-diesel-price-spike-makes-electric-trucks-cheaper-than-diesel-in-key-eu-markets-environmentalgroup-says-4919176",
-      "publishedAt": "2026-09-27T22:06:28.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/openai-shelves-new-ai-model-after-internal-safety-tests-wsj-reports-4921332",
+      "publishedAt": "2026-09-28T22:36:51.000Z",
       "summary": ""
     },
     {
-      "title": "Boston-bound Delta flight makes emergency landing in Portugal due to smoke in cabin",
+      "title": "Jefferies’ record equities haul offsets asset management slump",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/bostonbound-delta-flight-makes-emergency-landing-in-portugal-due-to-smoke-in-cabin-4919159",
-      "publishedAt": "2026-09-27T21:36:07.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/jefferies-quarterly-profit-jumps-on-deal-surge-equities-trading-strength-4921143",
+      "publishedAt": "2026-09-28T22:18:31.000Z",
       "summary": ""
     },
     {
-      "title": "Russia stocks lower at close of trade; MOEX Russia Index unchanged",
+      "title": "Pentagon awards RTX’s Raytheon $20.7 billion contract for AMRAAM missiles amid stockpile concerns",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4919147",
-      "publishedAt": "2026-09-27T21:20:03.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/pentagon-awardsrtxs-raytheon-207-billion-contract-for-amraam-missiles-amid-stockpile-concerns-4921266",
+      "publishedAt": "2026-09-28T22:12:57.000Z",
       "summary": ""
     },
     {
-      "title": "Foreign banks have expressed UBS merger interest, Swiss newspaper reports",
+      "title": "Sangoma Technologies stock surges over 40% on BRC acquisition deal",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/foreign-banks-have-expressed-ubs-merger-interest-swiss-newspaper-reports-4919063",
-      "publishedAt": "2026-09-27T21:00:31.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/sangoma-technologies-stock-surges-over-40-on-brc-acquisition-deal-4921309",
+      "publishedAt": "2026-09-28T22:01:23.000Z",
       "summary": ""
     },
     {
-      "title": "Anthropic CEO Amodei to meet Trump privately ahead of AI summit",
+      "title": "Bitcoin falls over 1% as risk sentiment takes a hit from bond rout, Iran tensions",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-falls-to-83k-amid-pressure-from-high-yields-iran-tensions-4919428",
+      "publishedAt": "2026-09-28T21:48:41.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Summit shares surge after-hours on $2 billion AstraZeneca equity deal",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/anthropic-ceo-amodei-to-meet-trump-privately-ahead-of-ai-summit-4919089",
-      "publishedAt": "2026-09-27T19:17:33.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/summit-shares-surge-afterhours-on-2-billion-astrazeneca-equity-deal-4921280",
+      "publishedAt": "2026-09-28T21:38:26.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Why is Navitas Semiconductor stock surging today?",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/why-is-navitas-semiconductor-stock-surging-today-93CH-4921273",
+      "publishedAt": "2026-09-28T21:31:26.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin consolidates above $82,650 support: Live levels",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-to-83119-bears-eye-81194-live-levels-93CH-4919475",
+      "publishedAt": "2026-09-28T19:19:13.000Z",
+      "summary": ""
+    },
+    {
+      "title": "AlgoQuant Asset Management Selects Liquid Mercury to Enhance Digital Asset Trading Infrastructure",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/algoquant-asset-management-selects-liquid-mercury-to-enhance-digital-asset-trading-infrastructure-4920777",
+      "publishedAt": "2026-09-28T15:00:36.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Aster Launches Perpetual Grid Trading 2.0 with Up to 140,000 $ASTER Liquidity Mining Campaign",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/aster-launches-perpetual-grid-trading-20-with-up-to-140000-aster-liquidity-mining-campaign-4920719",
+      "publishedAt": "2026-09-28T14:30:35.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Strategy purchases 1,665 bitcoin",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/strategy-purchases-1665-bitcoin-432SI-4920202",
+      "publishedAt": "2026-09-28T12:13:03.000Z",
       "summary": ""
     },
     {
@@ -47,54 +95,6 @@
       "category": "Kripto",
       "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-tests-double-top-at-82179-with-mfi-maxed-live-levels-93CH-4908352",
       "publishedAt": "2026-09-27T19:02:26.000Z",
-      "summary": ""
-    },
-    {
-      "title": "China weighs allowing ByteDance, Alibaba to buy new Nvidia chips, The Information reports",
-      "source": "Investing.com",
-      "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/china-weighs-allowing-bytedance-alibaba-to-buy-new-nvidia-chips-the-information-reports-4919047",
-      "publishedAt": "2026-09-27T17:06:46.000Z",
-      "summary": ""
-    },
-    {
-      "title": "Bitcoin steadies above $84,000 as historic Q3 rally nears its end",
-      "source": "Investing.com",
-      "category": "Kripto",
-      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-steadies-above-84000-as-historic-q3-rally-nears-its-end-4918823",
-      "publishedAt": "2026-09-27T05:48:39.000Z",
-      "summary": ""
-    },
-    {
-      "title": "Bitcoin holds near $84,000 as rising bond yields offset regulatory progress",
-      "source": "Investing.com",
-      "category": "Kripto",
-      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-holds-near-84000-as-rising-bond-yields-offset-regulatory-progress-4918445",
-      "publishedAt": "2026-09-26T12:27:32.000Z",
-      "summary": ""
-    },
-    {
-      "title": "Bitcoin slips, but set for weekly gain as regulatory cheer offsets surging yields",
-      "source": "Investing.com",
-      "category": "Kripto",
-      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-pauses-near-84k-with-focus-on-rate-jitters-bitget-hack-4916727",
-      "publishedAt": "2026-09-25T20:52:20.000Z",
-      "summary": ""
-    },
-    {
-      "title": "ChangeNOW Unveils TOKEN2049 Singapore Lineup, Bit Digital Stage Address, and Fast Track Wallet Program",
-      "source": "Investing.com",
-      "category": "Kripto",
-      "link": "https://www.investing.com/news/cryptocurrency-news/changenow-unveils-token2049-singapore-lineup-bit-digital-stage-address-and-fast-track-wallet-program-4917735",
-      "publishedAt": "2026-09-25T14:30:39.000Z",
-      "summary": ""
-    },
-    {
-      "title": "Bitcoin cuts losses, remains muted amid rising oil and yields, hawkish Fed signals",
-      "source": "Investing.com",
-      "category": "Kripto",
-      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-to-84k-as-yields-oil-spike-spook-risk-4914488",
-      "publishedAt": "2026-09-24T22:01:14.000Z",
       "summary": ""
     },
     {
