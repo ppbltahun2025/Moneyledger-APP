@@ -1,52 +1,68 @@
 {
-  "updatedAt": "2026-10-04T02:16:31.067Z",
+  "updatedAt": "2026-10-05T01:25:55.939Z",
   "articles": [
     {
-      "title": "How Muse Stacks up Vs. OpenAI Dots",
+      "title": "Nikkei 225 hits 70,037 overbought high: Pullback risk live",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/how-muse-stacks-up-vs-openai-dots-4930890",
-      "publishedAt": "2026-10-03T22:24:00.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/nikkei-225-hits-70037-overbought-high-pullback-risk-live-93CH-4930979",
+      "publishedAt": "2026-10-05T01:03:15.000Z",
       "summary": ""
     },
     {
-      "title": "Nestle India product sample declared unsafe by food regulator",
+      "title": "Exclusive-ShinyHunters hacker in FBI data theft detained in Jordan, cooperating with bureau, sources say",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/nestle-india-product-sample-declared-unsafe-by-food-regulator-93CH-4930889",
-      "publishedAt": "2026-10-03T21:52:01.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/exclusiveshinyhunters-hacker-in-fbi-data-theft-detained-in-jordan-cooperating-with-bureau-sources-say-4930978",
+      "publishedAt": "2026-10-05T01:01:21.000Z",
       "summary": ""
     },
     {
-      "title": "Russia stocks lower at close of trade; MOEX Russia Index unchanged",
+      "title": "AkzoNobel to sell Southeast Asia paints business to Nippon Paint for $1.35 billion",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4930887",
-      "publishedAt": "2026-10-03T21:20:04.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/akzonobel-could-sell-unit-to-nippon-paint-for-over-1-billion-ft-reports-4930948",
+      "publishedAt": "2026-10-05T01:00:46.000Z",
       "summary": ""
     },
     {
-      "title": "U.S. midterms: Breaking down expected impact on equities",
+      "title": "Taiwan foreign minister visits US for opening of new Arizona office",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/us-midterms-breaking-down-expected-impact-on-equities-4930882",
-      "publishedAt": "2026-10-03T20:33:43.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/taiwan-foreign-minister-visits-us-for-opening-of-new-arizona-office-4930977",
+      "publishedAt": "2026-10-05T00:56:18.000Z",
       "summary": ""
     },
     {
-      "title": "How AI investment has unusually large multiplier effects",
+      "title": "CSL to pay up to $1.6 bln to develop rare disease drug; shares rise",
       "source": "Investing.com",
       "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/how-ai-investment-has-unusually-large-multiplier-effects-4930881",
-      "publishedAt": "2026-10-03T20:21:01.000Z",
+      "link": "https://www.investing.com/news/stock-market-news/csl-to-pay-up-to-16-bln-to-develop-rare-disease-drug-shares-rise-4930976",
+      "publishedAt": "2026-10-05T00:53:05.000Z",
       "summary": ""
     },
     {
-      "title": "Bitcoin stuck at $84,947 in tightening range: Live levels",
+      "title": "U.S. stock futures tick higher as soft jobs data eases Fed hike bets",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/us-stock-futures-tick-higher-as-soft-jobs-data-eases-fed-hike-bets-4930969",
+      "publishedAt": "2026-10-05T00:19:24.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin coils at $85,337 in bull trap or breakout setup: Live",
       "source": "Investing.com",
       "category": "Kripto",
       "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-to-83119-bears-eye-81194-live-levels-93CH-4919475",
-      "publishedAt": "2026-10-03T19:02:33.000Z",
+      "publishedAt": "2026-10-04T19:01:54.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin edges above $85,000 as traders weigh U.S. leveraged-crypto move",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-holds-near-85000-as-sec-clears-first-3x-leveraged-crypto-etps-4930906",
+      "publishedAt": "2026-10-04T17:30:51.000Z",
       "summary": ""
     },
     {
@@ -55,14 +71,6 @@
       "category": "Kripto",
       "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-holds-below-85000-as-sec-custody-proposal-boosts-institutional-outlook-4930676",
       "publishedAt": "2026-10-03T18:16:48.000Z",
-      "summary": ""
-    },
-    {
-      "title": "Turkey extends lower margin trading requirement to Oct. 30",
-      "source": "Investing.com",
-      "category": "Saham",
-      "link": "https://www.investing.com/news/stock-market-news/turkey-extends-lower-margin-trading-requirement-to-oct-30-93CH-4930868",
-      "publishedAt": "2026-10-03T16:32:50.000Z",
       "summary": ""
     },
     {
@@ -87,14 +95,6 @@
       "category": "Kripto",
       "link": "https://www.investing.com/news/cryptocurrency-news/coinpayments-founder-alex-alexandrov-appointed-group-ceo-as-company-strengthens-executive-team-4930200",
       "publishedAt": "2026-10-02T16:30:34.000Z",
-      "summary": ""
-    },
-    {
-      "title": "Stablecoin firm Fasset aims to be a bank for people and their AI agents",
-      "source": "Investing.com",
-      "category": "Kripto",
-      "link": "https://www.investing.com/news/cryptocurrency-news/stablecoin-firm-fasset-aims-to-be-a-bank-for-people-and-their-ai-agents-4930084",
-      "publishedAt": "2026-10-02T14:28:26.000Z",
       "summary": ""
     },
     {
