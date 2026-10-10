@@ -1,13 +1,149 @@
 {
-  "updatedAt": "2026-09-27T00:00:00.000Z",
+  "updatedAt": "2026-10-09T02:40:34.651Z",
   "articles": [
     {
-      "title": "Selamat datang di MoneyLedger",
-      "source": "MoneyLedger",
-      "category": "Info",
-      "link": "#",
-      "publishedAt": "2026-09-27T00:00:00.000Z",
-      "summary": "Halaman ini akan otomatis terisi berita ekonomi, saham, dan kripto terbaru setelah GitHub Action 'Fetch News' berjalan pertama kali (lihat README untuk cara mengaktifkannya)."
+      "title": "Coca-Cola looks to sell Costa Coffee, Semafor reports",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/cocacola-looks-to-sell-costa-coffee-semafor-reports-4939724",
+      "publishedAt": "2026-10-09T02:30:31.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Flock Safety to cut 18% of roles amid privacy concerns- Reuters",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/flock-safety-to-cut-18-of-roles-amid-privacy-concerns-reuters-93CH-4940116",
+      "publishedAt": "2026-10-09T02:18:14.000Z",
+      "summary": ""
+    },
+    {
+      "title": "OpenAI’s September annualized revenue nears $50 billion, less than previously indicated, source says",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/openais-annualized-revenue-20-billion-less-than-previously-signaled-ft-reports-4939854",
+      "publishedAt": "2026-10-09T02:12:17.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Why is Lifestyle Communities stock sliding today?",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/why-is-lifestyle-communities-stock-sliding-today-93CH-4940105",
+      "publishedAt": "2026-10-09T02:06:40.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Why is Fast Retailing stock sliding today?",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/why-is-fast-retailing-stock-sliding-today-93CH-4940104",
+      "publishedAt": "2026-10-09T02:05:17.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Hang Seng stuck at 24,076 with bull trap risk: Live levels",
+      "source": "Investing.com",
+      "category": "Saham",
+      "link": "https://www.investing.com/news/stock-market-news/hang-seng-oversold-at-23876-with-rsi-2796-live-levels-93CH-4930985",
+      "publishedAt": "2026-10-09T02:02:52.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin slips under $82k amid surging oil prices, hit to Wall Street tech stocks",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-falls-below-83k-as-meast-tensions-soaring-yields-dent-crypto-appetite-4937967",
+      "publishedAt": "2026-10-08T21:56:08.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Bitcoin clings to $81K above 200 SMA after Double Top: Live",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/bitcoin-tests-87363-resistance-with-fading-momentum-live-levels-93CH-4931135",
+      "publishedAt": "2026-10-08T19:19:12.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Cardano Falls 10% In Bearish Trade",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/cardano-falls-10-in-bearish-trade-4939477",
+      "publishedAt": "2026-10-08T16:07:57.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Stablecoins Are Quietly Becoming Business Infrastructure, NOWPayments Data Shows",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/stablecoins-are-quietly-becoming-business-infrastructure-nowpayments-data-shows-4938959",
+      "publishedAt": "2026-10-08T12:30:10.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Travala Launches Native AI Travel Agent with BNB Chain & Binance Pay",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/travala-launches-native-ai-travel-agent-with-bnb-chain--binance-pay-4938960",
+      "publishedAt": "2026-10-08T12:30:10.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Hashi Mainnet to Launch With $500M in Capital Backing, Adds Anchorage Digital to Coalition",
+      "source": "Investing.com",
+      "category": "Kripto",
+      "link": "https://www.investing.com/news/cryptocurrency-news/hashi-mainnet-to-launch-with-500m-in-capital-backing-adds-anchorage-digital-to-coalition-4937792",
+      "publishedAt": "2026-10-08T01:30:09.000Z",
+      "summary": ""
+    },
+    {
+      "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/nikkei-may-rise-as-weak-yen-raises-earnings-hopes-776a8056?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T19:26:00.000Z",
+      "summary": "U.S. stocks were mostly lower, with the Nasdaq leading declines as makers of AI infrastructure suffered steep falls, many in the double digits. Nvidia was down 16%."
+    },
+    {
+      "title": "Comex Gold, Silver Settle Lower",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/gold-edges-lower-feds-rate-decision-in-focus-09dbfceb?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T19:01:00.000Z",
+      "summary": "Gold settled 1.4% lower, down two of the past three sessions, and silver fell 2.5%, down three of the past four sessions."
+    },
+    {
+      "title": "DeepSeek Won't Sink U.S. AI Titans",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/deepseek-us-ai-stocks-nvidia-broadcom-6cdfae81?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T18:12:00.000Z",
+      "summary": "Panic fueling the selloff of Nvidia, Broadcom and other tech giants is overblown."
+    },
+    {
+      "title": "Financial Services Roundup: Market Talk",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/financial-services-roundup-market-talk-94f52cba?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T17:27:00.000Z",
+      "summary": "Gain insight on Experian, SoFi Technologies and more in the latest Market Talks covering Financial Services."
+    },
+    {
+      "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/arabica-coffee-prices-hit-new-high-on-u-s-colombia-tariff-spat-582446fe?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T17:20:00.000Z",
+      "summary": "Arabica coffee prices hit a record level, as traders digested the withdrawal of President Trump’s threats to impose tariffs and economic sanctions on Colombia."
+    },
+    {
+      "title": "Swiss franc, Japanese yen Rise as DeepSeek News Boosts Safe Havens",
+      "source": "WSJ Markets",
+      "category": "Pasar Global",
+      "link": "https://www.wsj.com/articles/safe-haven-currencies-strengthen-amid-fears-over-global-tariffs-9964e17a?mod=rss_markets_main",
+      "publishedAt": "2025-01-27T14:55:00.000Z",
+      "summary": "The Yen and Swiss Franc were stronger against the dollar as investors sought safe havens after Chinese start-up DeepSeek’s new AI model hit U.S. tech stocks."
     }
   ]
 }

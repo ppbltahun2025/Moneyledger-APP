@@ -29,22 +29,27 @@
 
   <script src="js/config.js"></script>
   <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
   <script src="js/store.js"></script>
   <script>
+    initAuthPage();
     document.getElementById('register-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const msg = document.getElementById('reg-message');
       msg.style.color = 'var(--ink-soft)';
       msg.textContent = 'Memproses...';
+      const btn = e.target.querySelector('button[type=submit]');
 
       const password = document.getElementById('reg-password').value;
       const password2 = document.getElementById('reg-password2').value;
       if (password !== password2) {
         msg.style.color = 'var(--rust)';
         msg.textContent = 'Password dan ulangi password tidak sama.';
+        shakeCard();
         return;
       }
 
+      btn.disabled = true;
       try {
         const res = await backendCall('register', {
           username: document.getElementById('reg-username').value.trim(),
@@ -54,10 +59,12 @@
         msg.style.color = 'var(--primary)';
         msg.textContent = res.message + ' Setelah verifikasi, kembali ke halaman Masuk.';
         document.getElementById('register-form').reset();
+        Sound.coin();
       } catch (err) {
         msg.style.color = 'var(--rust)';
         msg.textContent = 'Gagal daftar: ' + err.message;
-      }
+        shakeCard();
+      } finally { btn.disabled = false; }
     });
   </script>
 </body>

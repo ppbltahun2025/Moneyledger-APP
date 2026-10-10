@@ -74,3 +74,23 @@ Repo → tab **Actions** → **Fetch News** → **Run workflow**.
 - **Privasi**: data tiap akun tersimpan di spreadsheet Google terpisah, dibuat otomatis. Pemilik sheet induk hanya bisa lihat daftar username/email, bukan isi transaksi (kecuali diberi akses editor).
 - **Keamanan password**: password di-hash (SHA-256 + salt) sebelum disimpan, tidak disimpan polos. Ini setup DIY yang cukup untuk pemakaian pribadi/kecil, bukan setara sistem auth komersial (tidak ada rate-limiting, dsb).
 - **Bukan nasihat keuangan**: konten literasi & berita bersifat edukasi umum, bukan rekomendasi investasi.
+
+---
+
+## Pembaruan: tampilan interaktif, edit/hapus, berita & backup
+
+**Kursor per konteks** (`css/cursors.css`, dibuat dari SVG): koin Rp (Dashboard/Transaksi), lingkaran + panah (Target), buku (Literasi), koran (Berita), pena (Jurnal). Kursor berubah juga saat mouse melewati menu sidebar.
+
+**Musik**: taruh file di `assets/lagu.mpeg`. Tombol putar/jeda + volume ada di sidebar dan di pojok halaman login. Posisi lagu berlanjut antar-halaman. Browser memblokir autoplay, jadi lagu mulai setelah klik pertama. Efek "ting" kecil saat menyimpan hanya berbunyi kalau musik sedang menyala.
+
+**Catatan dinamis**: klik dua kali (atau ikon ✎) untuk mengubah langsung di tempat, ✕ untuk menghapus, dengan tombol *Urungkan*. Berlaku untuk transaksi, target, dan jurnal, baik mode Tamu maupun Akun.
+
+**Berita**: cari kata kunci, filter tanggal (dari–sampai, atau Hari ini/Kemarin/7/30 hari), topik (Geopolitik, Saham, Emas, Sumber Daya, Ekonomi, Kripto, Pasar Global), dan wilayah (dalam/luar negeri). Tombol *Simpan ke spreadsheet* per berita, atau *Backup hasil ini* untuk semua hasil filter, tercatat di tab `SavedNews` pada spreadsheet pribadi.
+`scripts/fetch-news.js` kini mengumpulkan ±36 feed RSS (portal Indonesia, media internasional, dan pencarian topik Google News), berjalan tiap 6 jam, dan **menumpuk arsip** (120 hari, maks 6000 berita) di `data/articles.json` supaya pencarian per tanggal berguna. Yang disimpan hanya judul, ringkasan pendek, dan tautan ke sumber asli.
+
+**Literasi**: konsep bisa dibuka-tutup, kalkulator bunga majemuk, pencarian topik langsung dari Wikipedia Indonesia, dan tautan sumber resmi.
+
+### Wajib setelah memperbarui
+1. Tempel ulang seluruh `apps-script/Code.gs` ke project Apps Script, lalu **Deploy → Manage deployments → Edit → New version → Deploy**. Tanpa ini, edit/hapus dan backup berita di mode Akun akan gagal.
+2. Pastikan Cloudflare Worker di `js/config.js` meneruskan semua `action` ke Apps Script (aksi baru: `updateTransaction`, `deleteTransaction`, `updateJournal`, `deleteJournal`, `deleteTarget`, `saveNews`, `getSavedNews`).
+3. Jalankan **Actions → Fetch News → Run workflow** sekali untuk mengisi arsip.

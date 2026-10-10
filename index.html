@@ -27,8 +27,10 @@
 
   <script src="js/config.js"></script>
   <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
   <script src="js/store.js"></script>
   <script>
+    initAuthPage();
     if (Store.isLoggedIn()) window.location.href = 'dashboard.html';
 
     function continueAsGuest() {

@@ -11,36 +11,38 @@
   <div id="sidebar-root"></div>
   <div class="main">
     <h1 class="page-title">Berita & Pasar</h1>
-    <p class="page-sub" id="updated-label">Update otomatis setiap hari lewat GitHub Actions.</p>
+    <p class="page-sub" id="updated-label">Memuat arsip berita…</p>
+
+    <div class="toolbar">
+      <input type="search" id="n-search" placeholder="Cari kata kunci: emas, nikel, Selat Hormuz, IHSG…" aria-label="Cari berita">
+      <label class="field-label">Dari tanggal <input type="date" id="n-from"></label>
+      <label class="field-label">Sampai <input type="date" id="n-to"></label>
+      <label class="field-label">Wilayah
+        <select id="n-region"><option value="">Semua</option><option value="id">Dalam negeri</option><option value="intl">Luar negeri</option></select></label>
+    </div>
+    <div class="chips" id="n-cats"></div>
+    <div class="chips" id="n-quick">
+      <button class="chip" data-range="0">Hari ini</button>
+      <button class="chip" data-range="1">Kemarin</button>
+      <button class="chip" data-range="7">7 hari</button>
+      <button class="chip" data-range="30">30 hari</button>
+      <button class="chip on" data-range="all">Semua tanggal</button>
+    </div>
+
+    <div class="section-title">
+      <span id="n-count"></span>
+      <button class="secondary small" id="n-backup">Backup hasil ini ke spreadsheet</button>
+    </div>
     <div id="article-list"></div>
+    <button class="secondary" id="n-more" hidden style="margin:8px auto;display:block">Muat lebih banyak</button>
   </div>
 </div>
 
 <script src="js/config.js"></script>
 <script src="js/api.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/store.js"></script>
 <script src="js/layout.js"></script>
-<script>
-requireSession();
-renderSidebar('articles.html');
-
-fetch('data/articles.json?_=' + Date.now())
-  .then(r => r.json())
-  .then(data => {
-    document.getElementById('updated-label').textContent =
-      'Terakhir diperbarui: ' + new Date(data.updatedAt).toLocaleString('id-ID');
-    document.getElementById('article-list').innerHTML = data.articles.map(a => `
-      <div class="article-card">
-        <div class="source">${a.source} · ${new Date(a.publishedAt).toLocaleDateString('id-ID')} · <span class="tag">${a.category}</span></div>
-        <h3><a href="${a.link}" target="_blank" rel="noopener">${a.title}</a></h3>
-        <p>${a.summary}</p>
-      </div>
-    `).join('');
-  })
-  .catch(() => {
-    document.getElementById('article-list').innerHTML =
-      '<p style="color:var(--ink-soft);">Belum ada data berita. Jalankan GitHub Action "Fetch News" dulu (lihat README).</p>';
-  });
-</script>
+<script src="js/articles.js"></script>
 </body>
 </html>

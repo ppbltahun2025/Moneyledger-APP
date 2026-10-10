@@ -11,62 +11,43 @@
   <div id="sidebar-root"></div>
   <div class="main">
     <h1 class="page-title">Literasi Keuangan</h1>
-    <p class="page-sub">Ringkasan konsep, ditulis ulang dengan bahasa sendiri — bukan salinan buku (menghormati hak cipta penulis). Untuk teks lengkap, gunakan tautan resmi di tiap bagian.</p>
+    <p class="page-sub">Ringkasan konsep dengan bahasa sendiri (bukan salinan buku), kalkulator bunga majemuk, pencarian literasi online, dan tautan sumber resmi.</p>
 
-    <div class="article-card">
-      <h3>Aset vs. Liabilitas</h3>
-      <p>Konsep populer dari buku "Rich Dad Poor Dad" karya Robert Kiyosaki: aset adalah sesuatu yang memasukkan uang ke kantongmu (saham yang bagi dividen, properti sewaan, bisnis), sementara liabilitas mengeluarkan uang dari kantongmu (cicilan konsumtif, mobil pribadi yang terus butuh biaya perawatan). Banyak orang mengira rumah pribadi atau mobil adalah "aset", padahal keduanya baru jadi aset kalau menghasilkan pemasukan. Fokus jangka panjang: perbesar sisi aset, bukan sekadar memperbesar gaji.</p>
+    <div class="section-title" style="margin-top:0"><span>Konsep dasar</span></div>
+    <details class="concept" open><summary>Aset vs. Liabilitas</summary><p>Konsep populer dari buku "Rich Dad Poor Dad" karya Robert Kiyosaki: aset adalah sesuatu yang memasukkan uang ke kantongmu (saham yang bagi dividen, properti sewaan, bisnis), sementara liabilitas mengeluarkan uang dari kantongmu (cicilan konsumtif, mobil pribadi yang terus butuh biaya perawatan). Banyak orang mengira rumah pribadi atau mobil adalah "aset", padahal keduanya baru jadi aset kalau menghasilkan pemasukan. Fokus jangka panjang: perbesar sisi aset, bukan sekadar memperbesar gaji.</p></details>
+    <details class="concept"><summary>Cash Flow Quadrant</summary><p>Kiyosaki membagi sumber pendapatan orang menjadi empat kuadran: Employee (karyawan, tukar waktu dengan gaji), Self-employed (kerja untuk diri sendiri, penghasilan berhenti kalau berhenti kerja), Business owner (punya sistem/orang yang bekerja untukmu), dan Investor (uang bekerja untukmu). Tidak ada kuadran yang "salah", tapi kebebasan finansial biasanya datang dari bergeser sebagian ke kuadran Business owner dan Investor seiring waktu.</p></details>
+    <details class="concept"><summary>Bunga Majemuk (Compounding)</summary><p>Ini prinsip di balik hampir semua investasi jangka panjang: keuntungan yang diinvestasikan kembali akan menghasilkan keuntungan baru, dan efeknya membesar secara eksponensial seiring waktu. Semakin dini mulai — walau dengan nominal kecil — semakin besar dampaknya dibanding mulai besar tapi telat. Ini alasan kenapa "mulai sekarang" biasanya lebih penting daripada "menunggu sampai dana besar".</p></details>
+    <details class="concept"><summary>Dana Darurat Dulu, Baru Investasi</summary><p>Sebelum agresif ke saham atau kripto, banyak perencana keuangan menyarankan punya dana darurat setara 3–6 bulan pengeluaran di tempat yang mudah dicairkan (bukan di saham/kripto yang harganya naik-turun). Ini mencegah kamu terpaksa jual investasi di harga rugi hanya karena butuh uang mendadak.</p></details>
+    <details class="concept"><summary>Dollar-Cost Averaging (DCA)</summary><p>Strategi investasi rutin dengan nominal tetap (misal tiap tanggal gajian) tanpa berusaha menebak waktu terbaik pasar. Karena membeli di berbagai level harga (kadang mahal, kadang murah), rata-rata harga beli jadi lebih stabil dan risiko "salah waktu masuk" berkurang — cocok untuk pemula di saham maupun kripto.</p></details>
+
+    <div class="section-title"><span>Coba sendiri: bunga majemuk</span></div>
+    <div class="card" id="calc">
+      <div class="range-row"><span>Modal awal</span><input type="range" id="c-p" min="0" max="100000000" step="500000" value="5000000"><output id="o-p"></output></div>
+      <div class="range-row"><span>Tabungan per bulan</span><input type="range" id="c-m" min="0" max="10000000" step="100000" value="500000"><output id="o-m"></output></div>
+      <div class="range-row"><span>Imbal hasil per tahun</span><input type="range" id="c-r" min="0" max="20" step="0.5" value="8"><output id="o-r"></output></div>
+      <div class="range-row"><span>Lama (tahun)</span><input type="range" id="c-y" min="1" max="40" step="1" value="10"><output id="o-y"></output></div>
+      <div class="calc-out" id="c-out"></div>
+      <div class="stat-label" id="c-sub" style="margin-top:4px"></div>
+      <div class="stat-label">Simulasi sederhana dengan asumsi imbal hasil tetap. Hasil investasi nyata berubah-ubah dan bisa rugi.</div>
     </div>
 
-    <div class="article-card">
-      <h3>Cash Flow Quadrant</h3>
-      <p>Kiyosaki membagi sumber pendapatan orang menjadi empat kuadran: Employee (karyawan, tukar waktu dengan gaji), Self-employed (kerja untuk diri sendiri, penghasilan berhenti kalau berhenti kerja), Business owner (punya sistem/orang yang bekerja untukmu), dan Investor (uang bekerja untukmu). Tidak ada kuadran yang "salah", tapi kebebasan finansial biasanya datang dari bergeser sebagian ke kuadran Business owner dan Investor seiring waktu.</p>
-    </div>
+    <div class="section-title"><span>Cari literasi di internet</span></div>
+    <form class="toolbar" id="w-form">
+      <input type="search" id="w-q" placeholder="Misal: inflasi, reksa dana, obligasi, diversifikasi" aria-label="Cari topik literasi">
+      <button type="submit">Cari</button>
+    </form>
+    <div id="w-out"><div class="empty">Ketik topik lalu tekan Cari. Hasil diambil langsung dari Wikipedia bahasa Indonesia.</div></div>
 
-    <div class="article-card">
-      <h3>Bunga Majemuk (Compounding)</h3>
-      <p>Ini prinsip di balik hampir semua investasi jangka panjang: keuntungan yang diinvestasikan kembali akan menghasilkan keuntungan baru, dan efeknya membesar secara eksponensial seiring waktu. Semakin dini mulai — walau dengan nominal kecil — semakin besar dampaknya dibanding mulai besar tapi telat. Ini alasan kenapa "mulai sekarang" biasanya lebih penting daripada "menunggu sampai dana besar".</p>
-    </div>
-
-    <div class="article-card">
-      <h3>Dana Darurat Dulu, Baru Investasi</h3>
-      <p>Sebelum agresif ke saham atau kripto, banyak perencana keuangan menyarankan punya dana darurat setara 3–6 bulan pengeluaran di tempat yang mudah dicairkan (bukan di saham/kripto yang harganya naik-turun). Ini mencegah kamu terpaksa jual investasi di harga rugi hanya karena butuh uang mendadak.</p>
-    </div>
-
-    <div class="article-card">
-      <h3>Dollar-Cost Averaging (DCA)</h3>
-      <p>Strategi investasi rutin dengan nominal tetap (misal tiap tanggal gajian) tanpa berusaha menebak waktu terbaik pasar. Karena membeli di berbagai level harga (kadang mahal, kadang murah), rata-rata harga beli jadi lebih stabil dan risiko "salah waktu masuk" berkurang — cocok untuk pemula di saham maupun kripto.</p>
-    </div>
-
-    <div class="section-title">Baca versi lengkap (sumber resmi)</div>
-    <div class="ledger">
-      <div class="ledger-row" style="grid-template-columns: 1fr 140px;">
-        <div>Rich Dad Poor Dad — Robert Kiyosaki</div>
-        <div><a href="https://play.google.com/store/search?q=rich%20dad%20poor%20dad&c=books" target="_blank" rel="noopener">Cari di Play Books →</a></div>
-      </div>
-      <div class="ledger-row" style="grid-template-columns: 1fr 140px;">
-        <div>The Psychology of Money — Morgan Housel</div>
-        <div><a href="https://play.google.com/store/search?q=the%20psychology%20of%20money&c=books" target="_blank" rel="noopener">Cari di Play Books →</a></div>
-      </div>
-      <div class="ledger-row" style="grid-template-columns: 1fr 140px;">
-        <div>Toko buku Gramedia (versi cetak)</div>
-        <div><a href="https://www.gramedia.com/search?q=literasi%20keuangan" target="_blank" rel="noopener">Cari di Gramedia →</a></div>
-      </div>
-      <div class="ledger-row" style="grid-template-columns: 1fr 140px;">
-        <div>Modul edukasi resmi OJK</div>
-        <div><a href="https://www.ojk.go.id/id/kanal/edukasi-dan-perlindungan-konsumen/Pages/default.aspx" target="_blank" rel="noopener">Buka OJK →</a></div>
-      </div>
-    </div>
+    <div class="section-title"><span>Baca versi lengkap (sumber resmi)</span></div>
+    <div class="ledger" id="links"></div>
   </div>
 </div>
 
 <script src="js/config.js"></script>
 <script src="js/api.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/store.js"></script>
 <script src="js/layout.js"></script>
-<script>
-requireSession();
-renderSidebar('ebooks.html');
-</script>
+<script src="js/ebooks.js"></script>
 </body>
 </html>

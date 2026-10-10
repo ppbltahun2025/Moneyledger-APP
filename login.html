@@ -26,13 +26,16 @@
 
   <script src="js/config.js"></script>
   <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
   <script src="js/store.js"></script>
   <script>
+    initAuthPage();
     document.getElementById('login-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const msg = document.getElementById('login-message');
       msg.style.color = 'var(--ink-soft)';
       msg.textContent = 'Memproses...';
+      const btn = e.target.querySelector('button[type=submit]'); btn.disabled = true;
 
       try {
         const res = await backendCall('login', {
@@ -50,6 +53,7 @@
       } catch (err) {
         msg.style.color = 'var(--rust)';
         msg.textContent = 'Gagal masuk: ' + err.message;
+        btn.disabled = false; shakeCard();
       }
     });
   </script>

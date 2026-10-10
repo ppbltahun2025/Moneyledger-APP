@@ -11,21 +11,23 @@
   <div id="sidebar-root"></div>
   <div class="main">
     <h1 class="page-title">Jurnal Harian</h1>
-    <p class="page-sub">Catatan pribadimu — pikiran, keputusan finansial, atau apapun tentang harimu. Hanya tersimpan di spreadsheet-mu sendiri.</p>
+    <p class="page-sub">Catatan pribadimu: pikiran, keputusan finansial, atau apa pun tentang harimu. Klik dua kali pada catatan untuk mengubahnya.</p>
 
-    <form class="stacked" id="journal-form">
-      <input type="date" id="journal-date" required>
-      <textarea id="journal-entry" placeholder="Tulis apa saja tentang harimu..." required></textarea>
+    <form class="stacked" id="journal-form" style="max-width:640px">
+      <input type="date" id="journal-date" required style="max-width:200px">
+      <textarea id="journal-entry" placeholder="Tulis apa saja tentang harimu…" required></textarea>
       <button type="submit">Simpan catatan</button>
     </form>
 
-    <div class="section-title">Catatan sebelumnya</div>
+    <div class="section-title"><span>Catatan sebelumnya</span></div>
+    <div class="toolbar"><input type="search" id="journal-search" placeholder="Cari di catatan…" aria-label="Cari catatan"></div>
     <div id="journal-list"></div>
   </div>
 </div>
 
 <script src="js/config.js"></script>
 <script src="js/api.js"></script>
+<script src="js/ui.js"></script>
 <script src="js/store.js"></script>
 <script src="js/layout.js"></script>
 <script src="js/journal.js"></script>
